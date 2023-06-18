@@ -1,0 +1,29 @@
+@keyframes hover {
+    from {
+        translate: calc((100% + var(--padding)) * var(--start)) 0;
+    }
+
+    to {
+        translate: calc((100% + var(--padding)) * var(--start)) calc(100% + var(--padding));
+    }
+}
+
+@keyframes slide {
+    from {
+        translate: calc((100% + var(--padding)) * var(--start)) calc(100% + var(--padding));
+    }
+
+    to {
+        translate: calc((100% + var(--padding)) * var(--end)) calc(100% + var(--padding));
+    }
+}
+
+@keyframes fit {
+    from {
+        translate: calc((100% + var(--padding)) * var(--end)) calc(100% + var(--padding));
+    }
+
+    to {
+        translate: calc((100% + var(--padding)) * var(--end)) 0;
+    }
+}

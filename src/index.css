@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button-primary {
+        @apply bg-green-500 rounded-xl font-semibold w-24 p-2 text-white hover:bg-green-400
+    }
+}
