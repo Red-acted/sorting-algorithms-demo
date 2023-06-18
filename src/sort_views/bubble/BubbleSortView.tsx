@@ -30,7 +30,7 @@ function BubbleSortView() {
                                         style={{ 
                                             width: `${cardWidth}rem`,
                                             height: `${cardWidth*1.5}rem`,
-                                            translate: `calc((100% + 0.75rem) * ${index})` 
+                                            translate: `calc((100% + ${padding}rem) * ${index})` 
                                         }}
                                         className={"transition-all absolute bg-slate-50 shadow-lg border-2 rounded-xl text-4xl flex justify-center items-center"}
                                         children={value}
@@ -39,8 +39,8 @@ function BubbleSortView() {
                                     {index <= (length - walkthrough[step].cycle) && (
                                         <hr 
                                             color="#4ade80"
-                                            style={{ translate: `calc(${index}*(100%) - ${padding/2}rem)` }}
-                                            className={`absolute -bottom-8 w-[${cardWidth+padding}rem] h-3`} 
+                                            style={{ translate: `calc(${index}*(100%) - ${padding/2}rem)`, width: `${cardWidth+padding}rem` }}
+                                            className={`absolute -bottom-8 h-3`} 
                                         />
                                     )}
                                 </Fragment>

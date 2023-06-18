@@ -1,4 +1,4 @@
-@keyframes slide {
+@keyframes slide1 {
     from {
         translate: calc((100% + var(--padding)) * var(--start)) calc(100% + var(--padding));
     }
@@ -8,7 +8,7 @@
     }
 }
 
-@keyframes hover {
+@keyframes hover1 {
     from {
         translate: calc((100% + var(--padding)) * var(--end)) calc(100% + var(--padding));
     }

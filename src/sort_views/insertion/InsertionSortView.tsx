@@ -20,10 +20,10 @@ function InsertionSortView() {
 
         const slideDuration = "calc((var(--start) - var(--end)) * 100ms)"
         if (step > previousStep) {
-            card.style.animation = `slide ${slideDuration} ease-in, hover 150ms ease-in-out ${slideDuration}`
+            card.style.animation = `slide1 ${slideDuration} ease-in, hover1 150ms ease-in-out ${slideDuration}`
         }
         else {
-            card.style.animation = `slide ${slideDuration} ease-in 150ms reverse, hover 150ms ease-in-out reverse`
+            card.style.animation = `slide1 ${slideDuration} ease-in 150ms reverse, hover1 150ms ease-in-out reverse`
         }
 
         return () => {
@@ -78,7 +78,7 @@ function InsertionSortView() {
                             }}
                             style={{ 
                                 width: `${cardWidth}rem`,
-                                translate: `calc((100% + var(--padding)) * ${index})`
+                                translate: `calc((100% + var(--padding)) * ${index}) `
                                         +  `calc((100% + var(--padding)) * ${+( hover?.position === pos && hover?.nextPosition === undefined)}`
                             }}
                             children={value}
